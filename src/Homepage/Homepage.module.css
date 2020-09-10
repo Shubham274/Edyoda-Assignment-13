@@ -1,0 +1,46 @@
+.MainContainer {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4% 16%;
+  box-sizing: border-box;
+}
+
+.MainHeading {
+  font-family: "Caveat Brush", cursive;
+  font-size: 90px;
+  text-align: center;
+  color: #fad744;
+  text-shadow: 2px 5px #2b3252;
+  margin: 0;
+}
+
+.VideoComponent {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 16px;
+}
+.PlayList {
+  width: 30%;
+  margin-left: 16px;
+}
+.VideoCard {
+  width: 70%;
+  padding-right: 16px;
+  border-right: 1px solid #ccc;
+}
+.VCard {
+  width: 100%;
+  margin: 18px;
+  margin-left: -5px;
+  box-sizing: border-box;
+}
+
+.Active {
+  border: 3px solid #fad744;
+  border-radius: 9px;
+}

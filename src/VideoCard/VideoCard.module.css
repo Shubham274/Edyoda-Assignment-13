@@ -1,0 +1,29 @@
+.VideoCardLink {
+  text-decoration: none;
+}
+
+.VideoCard {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px #ccc;
+  margin: 0px;
+}
+
+.Thumbnail {
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.Title {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+}
+
+.Active {
+  margin: 0;
+  border: 1px solid #fad744;
+}
