@@ -3,7 +3,6 @@ import axios from "axios";
 import classes from "../VideoPage/VideoPage.module.css";
 
 class VideoPage extends React.Component {
-  // Video Details API: https://5d76bf96515d1a0014085cf9.mockapi.io/video/1
   state = {
     videoData: {},
   };
@@ -12,7 +11,6 @@ class VideoPage extends React.Component {
     axios
       .get(`https://5d76bf96515d1a0014085cf9.mockapi.io/video/1`)
       .then((response) => {
-        console.log(response.data);
         this.setState({ videoData: { ...response.data } });
       })
       .catch((err) => {
@@ -21,8 +19,8 @@ class VideoPage extends React.Component {
   }
 
   componentDidUpdate(pP, pS, sS) {
+    console.log(pP, pS, sS);
     const videoId = this.props.currentId;
-    console.log(videoId);
     if (videoId !== this.state.videoData.id) {
       axios
         .get(`https://5d76bf96515d1a0014085cf9.mockapi.io/video/${videoId}`)

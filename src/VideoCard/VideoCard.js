@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import classes from "./VideoCard.module.css";
 
 const VideoCard = (props) => {
-  console.log(props);
   return (
     <Link
       className={classes.VideoCardLink}

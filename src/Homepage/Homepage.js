@@ -45,7 +45,7 @@ class Homepage extends Component {
           <VideoCard
             thumbnail={item.thumbnail}
             title={item.title}
-            currentId={this.state.currentId}
+            currentId={item.id}
             handleActive={this.handleActive}
           />
         </div>
