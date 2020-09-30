@@ -9,7 +9,7 @@ class VideoPage extends React.Component {
 
   componentDidMount() {
     axios
-      .get(`https://5d76bf96515d1a0014085cf9.mockapi.io/video/1`)
+      .get(`https://5ee2af148b27f30016094d68.mockapi.io/Video/1`)
       .then((response) => {
         this.setState({ videoData: { ...response.data } });
       })
@@ -23,7 +23,7 @@ class VideoPage extends React.Component {
     const videoId = this.props.currentId;
     if (videoId !== this.state.videoData.id) {
       axios
-        .get(`https://5d76bf96515d1a0014085cf9.mockapi.io/video/${videoId}`)
+        .get(`https://5ee2af148b27f30016094d68.mockapi.io/Video/${videoId}`)
         .then((response) => {
           this.setState({ videoData: { ...response.data } });
         })

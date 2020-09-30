@@ -13,7 +13,7 @@ class Homepage extends Component {
 
   componentDidMount() {
     axios
-      .get("https://5d76bf96515d1a0014085cf9.mockapi.io/playlist")
+      .get("https://5ee2af148b27f30016094d68.mockapi.io/playlist")
       .then((response) => {
         this.setState({ videoList: [...response.data] });
       })
